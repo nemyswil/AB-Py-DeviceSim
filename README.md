@@ -90,7 +90,9 @@ Loaded 21 valves. Starting simulation...
 Running simulation... |
 XV6070: Open command detected.
 XV6070: Opened - Feedback updated.
+
 📦 Regenerating requirements.txt
+
 If you add new packages:
 
 pip freeze > requirements.txt
@@ -129,9 +131,9 @@ pause
 
 ---
 
-### ⚙️ `setup_env.bat`
 
-###🟨 Notes:
+
+####🟨 Notes:
 This batch file assumes you have Python installed and on your PATH.
 
 If you run into issues with Excel files, make sure openpyxl is installed and devices.xlsm is in the same directory.
