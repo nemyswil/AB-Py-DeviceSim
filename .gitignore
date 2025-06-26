@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# Environment
+SimVenv/
+env/
+.venv/
+*.env
+
+# VS Code settings
+.vscode/
+
+# Excel temporary or lock files
+~$*.xls*
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled or cache files
+*.egg-info/
+.eggs/
+*.sqlite3
+*.db
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg
+
+# IDE configs
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
