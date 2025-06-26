@@ -19,18 +19,23 @@ This Python-based simulation engine mimics industrial valve behavior by interact
 
 simulation_engine/
 │
+
 ├── main.py # Simulation loop
+
 ├── valve.py # Valve logic
+
 ├── parser.py # Excel device parser
+
 ├── plc_io.py # PLC communication interface
+
 ├── devices.xlsm # Your valve definitions spreadsheet
+
 ├── requirements.txt # Project dependencies
+
 ├── setup_env.bat # One-click setup for Windows
+
 └── README.md # You're here!
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -45,15 +50,11 @@ Edit
    SimVenv\Scripts\activate
 Install dependencies:
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Run the simulation:
 
-bash
-Copy
-Edit
+
 python main.py
 🖱️ Option 2: One-Click Setup (Windows)
 Double-click setup_env.bat in File Explorer. It will:
@@ -70,9 +71,9 @@ Launch the simulation
 Your spreadsheet must have these column headers (case-sensitive):
 
 Tag Name	DESCRIPTION	PLCIO Tags
-XV6070	open	RC4A0416:14:O.6
-XV6070	open feedback	RC4A0416:6:I.0
-XV6070	closed feedback	RC4A0416:6:I.1
+XV1231	open	IOPLC0416:14:O.6
+XV1231	open feedback	IOPLC0416:6:I.0
+XV1231	closed feedback	IOPLC0416:6:I.1
 
 Each valve should have at least:
 
@@ -85,19 +86,16 @@ A closed feedback
 Incomplete valve definitions are skipped with a warning.
 
 ✅ Example Console Output
-makefile
-Copy
-Edit
+
 Loaded 21 valves. Starting simulation...
 Running simulation... |
-XV6070: Open command detected.
-XV6070: Opened - Feedback updated.
+XV1231: Open command detected.
+XV1231: Opened - Feedback updated.
 📦 Regenerating requirements.txt
 If you add new packages:
 
-bash
-Copy
-Edit
+
 pip freeze > requirements.txt
+
 💬 Questions?
 Open an issue or contact your automation developer team.
